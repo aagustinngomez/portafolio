@@ -2,8 +2,7 @@ import React from 'react';
 
 const projects = () => {
   const projects = [
-    { name: 'To-Do App', link: 'https://github.com/tuusuario/todo-app' },
-    { name: 'E-commerce Demo', link: 'https://github.com/tuusuario/ecommerce-demo' },
+    { name: 'E-commerce Demo', link: 'https://aagustinngomez.github.io/portafolio' },
   ];
 
   return (
