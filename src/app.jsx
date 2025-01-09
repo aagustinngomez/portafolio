@@ -1,18 +1,21 @@
-import React from 'react';
-import Home from './components/Home';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import React from "react";
+import "./style/App.css";
+import Home from "./components/Home";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills.jsx";
+import Contact from "./components/Contact";
 
-const App = () => {
+function App() {
   return (
-    <div>
+    <div className="App">
       <Home />
       <About />
       <Projects />
+      <Skills />
       <Contact />
     </div>
   );
-};
+}
 
 export default App;

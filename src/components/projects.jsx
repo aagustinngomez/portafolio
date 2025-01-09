@@ -1,22 +1,48 @@
-import React from 'react';
+import React from "react";
+// import "./Projects.css";
 
-const projects = () => {
-  const projects = [
-    { name: 'E-commerce Demo', link: 'https://aagustinngomez.github.io/portafolio' },
-  ];
+const projects = [
+  {
+    title: "Proyecto 1",
+    description: "Este es un proyecto de ejemplo.",
+    skills: ["React", "CSS", "JavaScript"],
+  },
+  {
+    title: "Proyecto 2",
+    description: "Este es otro proyecto increíble.",
+    skills: ["Node.js", "MongoDB"],
+  },
+  {
+    title: "Proyecto 3",
+    description: "Un proyecto interesante.",
+    skills: ["HTML", "CSS"],
+  },
+  {
+    title: "Proyecto 4",
+    description: "El proyecto más reciente.",
+    skills: ["React", "Redux"],
+  },
+];
 
+const Projects = () => {
   return (
-    <section>
-      <h2>Proyectos</h2>
-      <ul>
+    <div className="projects">
+      <h2>Mis Proyectos</h2>
+      <div className="projects-gallery">
         {projects.map((project, index) => (
-          <li key={index}>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">{project.name}</a>
-          </li>
+          <div key={index} className="project-card">
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            <div className="skills">
+              {project.skills.map((skill, idx) => (
+                <span key={idx}>{skill}</span>
+              ))}
+            </div>
+          </div>
         ))}
-      </ul>
-    </section>
+      </div>
+    </div>
   );
 };
 
-export default projects;
+export default Projects;

@@ -1,17 +1,23 @@
-import React from 'react';
+import React from "react";
+// import "./Contact.css";
 
-const contact = () => {
+const Contact = () => {
   return (
-    <section>
+    <div className="contact">
       <h2>Contacto</h2>
+      <p>Sígueme en mis redes o escríbeme directamente:</p>
       <form>
-        <input type="text" placeholder="Tu nombre" />
-        <input type="email" placeholder="Tu correo" />
-        <textarea placeholder="Tu mensaje"></textarea>
+        <input type="text" placeholder="Nombre" />
+        <input type="email" placeholder="Email" />
+        <textarea placeholder="Mensaje"></textarea>
         <button type="submit">Enviar</button>
       </form>
-    </section>
+      <div className="socials">
+        <a href="https://github.com/aagustinngomez">GitHub</a>
+        <a href="https://twitter.com">Twitter</a>
+      </div>
+    </div>
   );
 };
 
-export default contact;
+export default Contact;

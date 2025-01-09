@@ -1,11 +1,16 @@
-import React from 'react';
-
+import React from "react";
+// import "./Home.css";
+// import profileImg from "../assets/.jpg"; 
 const Home = () => {
   return (
-    <section>
-      <h1>Hola, soy Agustín</h1>
-      <p>Desarrollador Full Stack buscando mi primer oportunidad profesional.</p>
-    </section>
+    <div className="home">
+      <div className="profile">
+      </div>
+      <div className="info">
+        <h1>Hola, soy Agustín Gómez</h1>
+        <p>Desarrollador Web </p>
+      </div>
+    </div>
   );
 };
 
