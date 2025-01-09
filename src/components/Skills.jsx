@@ -1,5 +1,5 @@
 import React from "react";
-// import "./Skills.css";
+import "./Skills.css";
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB"];
 

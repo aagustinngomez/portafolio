@@ -1,0 +1,52 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    text-align: center;
+    position: relative;
+  }
+  
+  .profile {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #00aaff;
+  }
+  
+  .info {
+    flex: 2;
+    animation: fadeIn 1.5s ease;
+  }
+  
+  .info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #00aaff;
+  }
+  
+  .info p {
+    font-size: 1.2rem;
+    color: #d3d3d3;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+ 
